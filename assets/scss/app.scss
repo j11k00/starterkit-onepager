@@ -1,0 +1,103 @@
+/*	--------------------------------------------------------------------
+
+	* SETTINGS:		Global variables, site-wide settings, config switches, etc.
+	* TOOLS:		Site-wide mixins and functions.
+	* GENERIC:		Low-specificity, far-reaching rulesets (e.g. resets).
+	* BASE:			Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+	* OBJECTS:		Objects, abstractions, and design patterns (e.g. .media {}).
+	* COMPONENTS:	Discrete, complete chunks of UI (e.g. .carousel {}). This is the one layer that inuitcss doesn’t get involved with.
+	* TRUMPS:		High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
+
+-----------------------------------------------------------------------*/
+
+	/* Fonts
+	--------------------------------*/
+	// @import "fonts";
+
+	/* Settings
+	--------------------------------*/
+	@import "../bower_components/inuit-defaults/settings.defaults";
+	@import "../bower_components/inuit-responsive-settings/settings.responsive";
+	@import "settings.colors";
+	@import "settings.typography";
+	@import "settings.layout";
+
+	// @import "settings.objects";
+
+	/* Tools
+	--------------------------------*/
+	@import "../bower_components/inuit-functions/tools.functions";
+	@import "../bower_components/inuit-mixins/tools.mixins";
+	@import "../bower_components/inuit-tools-widths/tools.widths";
+	@import "../bower_components/inuit-responsive-tools/tools.responsive";
+	@import "tools.aliases";
+
+	/* Generic
+	--------------------------------*/
+	@import "../bower_components/inuit-normalize/generic.normalize";
+	body {margin: 0;}
+	@import "../bower_components/inuit-box-sizing/generic.box-sizing";
+
+	/* Base
+	--------------------------------*/
+	@import "../bower_components/inuit-page/base.page";
+	.constrain {
+		max-width: $constrain;
+		margin: 0 auto;
+	}
+
+	body { font-family: $font-family-sans; }
+
+	@import "../bower_components/inuit-headings/base.headings";
+	@import "_base.images";
+	figure {
+		margin: 0;
+	}
+
+
+	/* objects
+	--------------------------------*/
+	@import "../bower_components/inuit-list-ui/objects.list-ui";
+	@import "../bower_components/inuit-list-inline/objects.list-inline";
+	@import "../bower_components/inuit-list-bare/objects.list-bare";
+	@import "../bower_components/inuit-buttons/objects.buttons";
+	// @import "objects.forms";
+
+
+	// @import "objects.buttons";
+	// @import "objects.media";
+	// @import "objects.tabs";
+	// @import "objects.views";
+	// @import "objects.loader";
+
+
+	/* modules 
+	--------------------------------*/
+	// @import "modules.bottom-nav";
+	// @import "modules.top-nav";
+	// @import "modules.tags";
+	// @import "modules.tile";
+	// @import "modules.card";
+
+
+	/* Helpers
+	--------------------------------*/
+	@import "utility.helpers";
+
+
+	/* plugins
+	--------------------------------*/
+	@import "plugins.smoothstate";
+
+	/* Theme
+	--------------------------------*/
+	@import "theme";
+
+	/* Trumps
+	--------------------------------*/
+	@import "../bower_components/inuit-clearfix/trumps.clearfix";
+	@import "../bower_components/inuit-widths-responsive/trumps.widths-responsive";
+
+	/* sort this shit out
+	--------------------------------*/
+	@import "shame";

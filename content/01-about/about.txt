@@ -1,0 +1,5 @@
+title: About me
+
+----
+
+text: Some text about you and your skills

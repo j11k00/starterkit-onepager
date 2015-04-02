@@ -1,0 +1,46 @@
+{
+  "name": "kirby-starter",
+  "version": "0.0.1",
+  "authors": [
+    "j11k00 <kuhn.jesse@gmail.com>"
+  ],
+  "description": "inuit boilerplate for kirby",
+  "main": "css/app.scss",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "boilerplate",
+    "kirby",
+    "inuit"
+  ],
+  "license": "MIT",
+  "homepage": "http:thedaytoday.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuit-defaults": "0.2.1",
+    "inuit-functions": "0.2.0",
+    "inuit-mixins": "0.2.3",
+    "inuit-box-sizing": "0.2.0",
+    "inuit-normalize": "3.0.2",
+    "inuit-page": "0.2.1",
+    "inuit-headings": "~0.3.0",
+    "inuit-list-ui": "~0.4.1",
+    "inuit-list-inline": "~0.3.2",
+    "inuit-buttons": "~0.4.1",
+    "inuit-list-bare": "~0.3.0",
+    "jquery": "latest",
+    "smoothstate": "~0.5.1",
+    "fitvids": "~1.1.0",
+    "inuit-clearfix": "~0.2.1",
+    "inuit-tools-widths": "~0.1.4",
+    "inuit-widths-responsive": "~0.2.2",
+    "inuit-responsive-tools": "~0.1.3"
+  }
+}

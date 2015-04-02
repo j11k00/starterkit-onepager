@@ -2,11 +2,11 @@ Title: Kirby Starterkit
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Jesse Kühn	
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: This is a One-pager Starterkit for Kirby.
 
 ----
 

@@ -1,15 +1,16 @@
-<h2>Latest projects</h2>
+<section class="section clearfix projects">
+	<div class="constrain">
+		<h1 class="section-title"><?php echo $data->title()->html() ?></h1>
+		<?php echo $data->text()->kirbytext() ?>
 
-<ul class="teaser cf">
-  <?php foreach(page('projects')->children()->visible()->limit(3) as $project): ?>
-  <li>
-    <h3><a href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a></h3>
-    <p><?php echo $project->text()->excerpt(80) ?> <a href="<?php echo $project->url() ?>">read&nbsp;more&nbsp;→</a></p>
-    <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
-    <a href="<?php echo $project->url() ?>">
-      <img src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" >
-    </a>
-    <?php endif ?>
-  </li>
-  <?php endforeach ?>
-</ul>
+		<ul class="list-bare">
+		<?php foreach($data->children()->visible() as $project): ?>
+			<li>
+				<figure>
+					<img src="<?php echo $project->images()->first()->url() ?>" alt="<?php echo $project->title()->html() ?>">
+				</figure>
+			</li>
+		<?php endforeach ?>
+		</ul>
+	</div>
+</section>

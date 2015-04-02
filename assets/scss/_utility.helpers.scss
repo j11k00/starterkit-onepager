@@ -1,0 +1,305 @@
+	/* -----------------------------------------------------------
+	
+	::	Clearfix
+	
+	------------------------------------------------------------ */
+
+	// .cf {
+	// 	@include cf;
+	// }
+
+
+	/* -----------------------------------------------------------
+	
+	::	Layout Helpers
+	
+	------------------------------------------------------------ */
+
+	.flex {
+		display: flex; /* or inline-flex */
+	}
+
+
+	.flex > * {
+		flex: (1);
+		text-align: center;
+	}
+
+	/* -----------------------------------------------------------
+	
+	::	Overlays
+	
+	------------------------------------------------------------ */
+
+
+	.image-overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	/* -----------------------------------------------------------
+	
+	::	Horizontal alignment
+	
+	------------------------------------------------------------ */
+
+	.left { 
+		text-align: left;
+	}
+
+	.right {
+		text-align: right;
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.float-left { 
+		float: left;
+	}
+
+	.float-right {
+		float: right;
+	}
+
+
+	/* -----------------------------------------------------------
+	
+	::	Sticky elements
+	
+	------------------------------------------------------------ */
+
+	.sticky {
+		position: -webkit-sticky;
+		position: sticky;
+	    top: 0px;
+	}
+
+
+	/* -----------------------------------------------------------
+	
+	::	Verical alignment (flexbox)
+	
+	------------------------------------------------------------ */
+
+	.verical-center {
+		align-self: flex-center;
+	}
+
+	.verical-top {
+		align-self: flex-start;
+	}
+
+	.verical-bottom {
+		align-self: flex-end;
+	}
+
+
+
+	/* -----------------------------------------------------------
+	
+	::	Verical alignment (translate)
+	
+	------------------------------------------------------------ */
+
+	%vertical-align {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+
+	/* -----------------------------------------------------------
+	
+	::	Boxed off content uses multiples of the base spacing unit
+	
+	------------------------------------------------------------ */
+
+	.box-s {
+		padding: $bs/2;
+	}
+
+	.box {
+		padding: $bs;
+	}
+
+	.box-m {
+		padding: $bs*2;
+	}
+
+	.box-l { padding: $bs*3;}
+
+	.trim {
+		margin: 0;
+	}
+
+
+	/* -----------------------------------------------------------
+	
+	::	Icon sizes
+	
+	------------------------------------------------------------ */
+
+	.i-s {
+		//font-size: em(10);
+		@include inuit-font-size(14px, false);
+	}
+
+	.i-l {
+		//font-size: em(18);
+		@include inuit-font-size(18px, false);
+	}
+
+	.i-xl {
+		//font-size: em(20);
+		@include inuit-font-size(32px, false);
+		color: $color-positive;
+	}
+
+	.i-xxl {
+		//font-size: em(22);
+		@include inuit-font-size(24px, false);
+	}
+
+	i {
+		vertical-align: middle;
+	}
+
+
+	/* -----------------------------------------------------------
+	
+	::	Typography
+	
+	------------------------------------------------------------ */
+
+	.sc {
+		text-transform: uppercase;
+		letter-spacing: .1em;
+	}
+
+	.text-shadow {
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	}
+
+	.underlined {
+		display: inline-block;
+		border-bottom: 1px solid #FFF;
+	}
+
+	.small {
+		@include inuit-font-size(12px);
+	}
+
+
+	.x-light {
+		font-weight: $extra-light;
+	}
+	
+	.light {
+		font-weight: $light;
+	}
+	
+	.normal {
+		font-weight: $normal;
+	}
+
+	.semi-bold {
+		font-weight: $semi-bold;
+	}
+
+	.bold {
+		font-weight: $bold;
+	}
+
+	.x-bold {
+		font-weight: $extra-bold;
+	}
+
+	.kilo {
+		font-size: $kilo;
+	}
+
+	.mega {
+		font-size: $mega;
+	}
+
+	.giga {
+		font-size: $giga;
+	}
+
+	/* -----------------------------------------------------------
+	
+	::	Gradients & Colors
+	
+	------------------------------------------------------------ */
+
+	// %shade {
+	// 	@include background-image(linear-gradient(hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 1) 50%));
+	// }
+
+	// %gradient {
+	// 	@include background-image(linear-gradient(hsla(0, 0%, 5%, 1.0) 0%, hsla(0, 0%, 20%, 1.0) 80%));
+	// }
+
+
+	/* -----------------------------------------------------------
+	
+	::	Shapes
+	
+	------------------------------------------------------------ */
+
+	.round {
+		border-radius: 100%;		
+	}
+
+	.circle {
+		display: block;
+		border-radius: 100%;
+	}
+
+
+	/* -----------------------------------------------------------
+	
+	::	Colour
+	
+	------------------------------------------------------------ */
+
+	.white {
+		color: #FFF;
+	}
+
+	.opaque {
+		opacity: 0.5;
+	}
+
+	.transparent {
+		background: transparent;
+	}
+
+	.shade-floor {
+		background: 
+			linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, 0),
+				rgba(0, 0, 0, 1)
+				);
+	}
+
+	.shade-cieling {
+		background: 
+			linear-gradient(
+				to bottom,
+				rgba(0, 0, 0, 0.7),
+				rgba(0, 0, 0, 0)
+				);
+	}

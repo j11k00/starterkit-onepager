@@ -1,0 +1,5 @@
+title: John Doe
+----
+quote: This dude is the best photographer in the world
+----
+url: http://yourtestimonialswebsite.com
